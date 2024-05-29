@@ -1,0 +1,35 @@
+.about{
+    padding-bottom: 0;
+}
+
+
+.about__grid{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+   
+
+}
+.about__img-wrapper{
+    position: relative;
+    padding-left: 1.5rem;
+    /* box-shadow: 0 0 15px hsl(27, 49%, 63%),
+                0 0 50px lightpink; */
+
+}
+
+
+.about__img-wrapper::before{
+    content: '';
+    position: absolute;
+    bottom: -1.125rem;
+    left: 0;
+    background-color: var(--first-color);
+    width: 96%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 0 0 15px hsl(27, 49%, 63%),
+                0 0 50px rgb(102, 83, 86);
+
+}
+

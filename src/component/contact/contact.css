@@ -1,0 +1,216 @@
+/* contact.css */
+
+/* Style for the form container */
+.hubspot-form-container {
+  padding: 2.5rem;
+  position: relative;
+    background: url(../../assets/bgn.png) center/cover fixed;
+    
+  } 
+  /* .hubspot-form{
+        color: white;
+  } */
+  
+  /* Style for the form inputs */
+  /* .hubspot-form-container input[type="text"],
+  .hubspot-form-container input[type="email"],
+  .hubspot-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+  } */
+  
+  /* Style for the form button */
+  /* .hubspot-form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hubspot-form-container button:hover {
+    background-color: #0056b3;
+  }  */
+  /* contact.css */
+#hubspotForm table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+#hubspotForm th, #hubspotForm td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#hubspotForm th {
+  background-color: #f2f2f2;
+}
+
+#hubspotForm input[type="text"],
+#hubspotForm input[type="email"],
+#hubspotForm input[type="tel"],
+#hubspotForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#hubspotForm input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#hubspotForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.hs_your_name {
+  margin-bottom: 15px;
+  color: #45a049;
+}
+.hs_your_name label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.hs_your_name .input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HubSpot Form CSS
+/* Just replace the following selector with your form element ID:  */
+/* #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    padding: 40px 20px;
+    background-color: rgba(19, 35, 47, 0.9);
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div .input {
+    width: 100%;
+    position: relative;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div input,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div textarea,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_submit {
+    width: 96%;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_email > label,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_firstname > label,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_lastname > label,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_phone > label {
+    position: absolute;
+    transform: translateY(1px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.25s;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_email input,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_firstname input,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_lastname input,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_phone input {
+    font-size: 22px;
+    padding: 5px 10px;
+    background: 0 0;
+    color: #fff;
+    border-radius: 0;
+    display: block;
+    border: 1px solid #a0b3b0;
+    outline: unset;
+  }
+  /* For jquery code (.active) */
+  /* #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.active input,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.active textarea {
+    border-color: #1ab188;
+  }
+  /* For jquery code (.active) */
+  /* #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.active > label {
+    transform: translateY(-32px);
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_firstname,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_lastname,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div.hs_phone {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div .hs-button {
+    max-width: fit-content;
+    display: block;
+    margin: 20px auto 0;
+    background-color: #1ab188;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  /* For jquery code (.active) */
+  /* #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div .hs-button:active,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div .hs-button:focus,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div .hs-button:hover {
+    background-color: #fff;
+    color: #1ab188;
+  } */
+  /* #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc > div textarea {
+    height: 100px;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc .hs-error-msgs {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+  }
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc .hs-error-msg,
+  #hsForm_1412a72d-7b42-49f1-bab8-5287c5ddbbcc .hs-main-font-element {
+    color: #fff;
+    font-size: 16px;
+  }   */

@@ -1,0 +1,91 @@
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    
+    z-index: 100;
+}
+.nav{
+    height:calc(var(--header-height)+ 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+.nav__logo-img{
+    width: 155px;
+   
+    
+}
+/* .nav__logo-img {
+    width: 190px;
+} */
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+
+    
+}
+.nav__list a{
+    color: var(--title-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+}
+.nav__list a:hover,
+.nav__list.active{
+    color: hsl(27, 34%, 59%);
+    border-bottom: 3px solid hsl(27, 33%, 55%);
+    transition: 0.3s ease;
+}
+.Reservation{
+    padding: 9px 22px;
+    display: inline-block;
+    color: var(--title-color);
+    background: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    box-shadow:0 0 25px hsl(26, 77%, 21%);
+    transition: 0.3s ease;
+}
+.Reservation:hover{
+    background-color: transparent;
+    color: var(--first-color);
+    
+}
+    
+
+.nav__link,
+.nav__toggle {
+    color: var(--title-color);
+    
+}
+.nav__link {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+}
+.nav__toggle{
+    font-size: var(--h2-font-size);
+    display: none;
+
+}
+.scroll-header{
+    position: fixed;
+    background-color: var(--container-color);
+    animation: slide-down 0.7s;
+}
+@keyframes slide-down{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.active{
+    color:var(--first-color);
+}
