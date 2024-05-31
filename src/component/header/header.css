@@ -189,8 +189,8 @@
       position: absolute;
       top: 70px;
       right: 0;
-      background-color: #333;
-      width: 100%;
+      background-color:hsl(0, 0%, 8%);
+      width: 90%;
       height: 100vh;
       flex-direction: column;
       align-items: center;
@@ -203,7 +203,7 @@
     }
   
     .nav__list a {
-      color: white;
+      color:  hsl(27, 34%, 59%);
       margin: 10px 0;
     }
   }
