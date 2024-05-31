@@ -1,4 +1,4 @@
-.header{
+/* .header{
     position: absolute;
     left: 0;
     top: 0;
@@ -16,14 +16,14 @@
    
 }
 .nav__logo-img{
-    width: 155px;
+    width: 150px;
    
     
 }
 /* .nav__logo-img {
     width: 190px;
 } */
-.nav__list {
+/* .nav__list {
     display: flex;
     column-gap: 2rem;
 
@@ -88,4 +88,123 @@
 
 .active{
     color:var(--first-color);
-}
+} */ 
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+  }
+  
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav__logo-img {
+    width: 150px;
+  }
+  
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav__list a {
+    color: var(--title-color);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+  }
+  
+  .nav__list a:hover,
+  .nav__list.active {
+    color: hsl(27, 34%, 59%);
+    border-bottom: 3px solid hsl(27, 33%, 55%);
+    transition: 0.3s ease;
+  }
+  
+  .Reservation {
+    padding: 9px 22px;
+    display: inline-block;
+    color: var(--title-color);
+    background: var(--first-color);
+    border: 1px solid var(--first-color);
+    padding: 1rem 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 25px hsl(26, 77%, 21%);
+    transition: 0.3s ease;
+  }
+  
+  .Reservation:hover {
+    background-color: transparent;
+    color: var(--first-color);
+  }
+  
+  .nav__link,
+  .nav__toggle {
+    color: var(--title-color);
+  }
+  
+  .nav__link {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+  }
+  
+  .nav__toggle {
+    font-size: var(--h2-font-size);
+    display: none;
+    cursor: pointer;
+  }
+  
+  .scroll-header {
+    position: fixed;
+    background-color: var(--container-color);
+    animation: slide-down 0.7s;
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .active {
+    color: var(--first-color);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav__toggle {
+      display: block;
+    }
+  
+    .nav__list {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100%);
+    }
+  
+    .nav__list.open {
+      transform: translateX(0);
+    }
+  
+    .nav__list a {
+      color: white;
+      margin: 10px 0;
+    }
+  }
+  
